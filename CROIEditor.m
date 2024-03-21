@@ -1,4 +1,4 @@
-classdef CROIEditor_CE < handle
+classdef CROIEditor < handle
     %% CROIEditor
     %
     % A Class with a convenient user interface to define multiple region of 

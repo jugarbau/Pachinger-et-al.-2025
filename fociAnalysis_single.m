@@ -6,11 +6,11 @@
 % Before running the script:
 % 1. Ensure you have three 8-bit, single-channel, maximum projection images in .tif format.
 % 2. Adjust the 'pxSize' variable with the appropriate pixel size for the image.
-% 3. Manually delineate the ROIs (cells) in the image using the 'CROIEditor_CE' function.
+% 3. Manually delineate the ROIs (cells) in the image using the 'CROIEditor' function.
 
 % Note:
 % - The 'mergeAndAdjustImages' function should be defined to merge and adjust the three channels.
-% - The 'CROIEditor_CE' function is used for manual delineation of ROIs (cells).
+% - The 'CROIEditor' function is used for manual delineation of ROIs (cells).
 % - The 'watershedWithMarkers' function performs watershed transform.
 
 % Authors:
@@ -27,7 +27,7 @@ pxSize = 9.2733; % ?
 adjustedImage = mergeAndAdjustImages();
 
 % ROI all cells - manual delineation of each cell
-roiwindow = CROIEditor_CE(adjustedImage);
+roiwindow = CROIEditor(adjustedImage);
 waitfor(roiwindow,'roi');
 if ~isvalid(roiwindow)
     disp('You closed the window without applying ROI');
