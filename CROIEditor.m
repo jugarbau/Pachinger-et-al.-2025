@@ -46,7 +46,7 @@ classdef CROIEditor < handle
     % date. Mai 6th 2011
     % email. jonas.reber at gmail dot com
     % web.  desperate-engineers.com
-    % minor modifications by Julia Garcia Baucells
+    % minor modifications by Júlia Garcia Baucells
 
 % Redistribution and use in source and binary forms, with or without
 % modification, are permitted provided that the following conditions are met:
@@ -109,7 +109,7 @@ classdef CROIEditor < handle
     %% Public Methods
     methods 
         
-        function this = CROIEditor_CE(theImage)    
+        function this = CROIEditor(theImage)    
         % constructor
             % make sure the window appears "nice" (was hard to find this
             % aspect ratio to show a well aligned UI ;)
@@ -170,7 +170,7 @@ classdef CROIEditor < handle
             
             % load images
             this.imag = imagesc(this.image,'parent',this.imax); axis off; 
-            this.roifig = imagesc(this.image,'parent',this.roiax); axis off; colormap("gray"); 
+            this.roifig = imagesc(this.image,'parent',this.roiax); axis off; colormap("jet"); 
             
             % set masks to blank
             this.loadmask = zeros(size(this.image));

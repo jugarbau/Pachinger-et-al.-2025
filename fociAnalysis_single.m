@@ -13,15 +13,11 @@
 % - The 'CROIEditor' function is used for manual delineation of ROIs (cells).
 % - The 'watershedWithMarkers' function performs watershed transform.
 
-% Authors:
-% Colette Emery (2022)
-% Julia Garcia Baucells (2023)
-
 close all
 clc
 clear
 
-pxSize = 9.2733; % ?
+pxSize = 9.2733; 
 
 % Load, merge & adjust brightness & contrast for the 3 channels
 adjustedImage = mergeAndAdjustImages();

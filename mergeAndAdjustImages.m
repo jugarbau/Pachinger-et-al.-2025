@@ -70,5 +70,3 @@ adjustedImage = adjustBrightnessAndContrast(mergedImage, brightness, contrast);
 imshow(adjustedImage);
 title('Final Adjusted Image');
 end
-
-
