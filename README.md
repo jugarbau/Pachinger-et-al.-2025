@@ -39,7 +39,7 @@ Details of the analysis can be found in the Methods section under 'Quantificatio
 The full analysis script can be accessed at:
 [GitHub Repository](https://github.com/jugarbau/Pachinger-et-al.-2025)
 
-The `CROIEditor` function is available at:
+The original `CROIEditor` function is available at:
 [GitHub Repository](https://github.com/aether-lab/prana/blob/master/CROIEditor.m)
 
 ## License
